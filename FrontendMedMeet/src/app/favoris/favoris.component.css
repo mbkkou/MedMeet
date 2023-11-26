@@ -1,0 +1,94 @@
+@import '~boxicons/css/boxicons.min.css';
+
+/* Styles common to all screen sizes */
+.home-section {
+  position: relative;
+  min-height: 100vh;
+  padding-left: 78px;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.page-title {
+  color: #17084d;
+  font-family: Kirang Haerang;
+  margin-left: 50px;
+  font-size: 40px;
+}
+
+.place,
+.search,
+.name-speciality {
+  border-radius: 10px;
+  margin-left: 50px;
+  color: #17084d;
+  width: 300px;
+  padding-left: 30px;
+  height: 45px;
+  margin-top: 10px;
+  background-color: #EEF3F0;
+  box-shadow: 0 8px 10px 0 rgba(28, 28, 28, 0.24), 0 17px 50px 0 rgba(98, 98, 98, 0.19);
+  border: 0.5px solid rgb(101, 101, 105);
+}
+
+.search {
+  background-color: #DFDCBE;
+}
+
+.search::placeholder {
+  color: rgb(78, 73, 73);
+}
+
+.search-container-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-info {
+  display: inline-flex;
+  align-items: center;
+  width: 60%;
+}
+
+.search-info input {
+  margin-right: 10px;
+  outline: none;
+}
+
+.search-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.search-container input {
+  padding-right: 30px;
+  outline: none;
+}
+
+.search-container i {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+::placeholder {
+  color: #17084d;
+  font-size: 17px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .search-info,
+  .search-container {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .search-info input {
+    margin-right: 0;
+  }
+}

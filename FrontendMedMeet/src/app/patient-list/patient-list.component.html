@@ -1,0 +1,24 @@
+<!-- <app-navbar-second></app-navbar-second>
+<app-sidebar></app-sidebar> -->
+
+<section class="home-section">
+    <h1 class="page-title">List Of Patient</h1>
+    <div class="global-div">
+        <div class="second-div" *ngFor="let patient of patients">
+            <div class="info-patient">
+                <img [src]="imageUrl">
+                <span class="name">{{patient.prenom_Patient}} {{ patient.nom_Patient }}</span>
+            </div>
+            <div class="see-more">
+                <span class="see">View Medical Record</span>
+                <i class='bx bx-chevrons-right'></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</section>
+<!-- 
+<app-footer></app-footer> -->

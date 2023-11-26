@@ -1,0 +1,21 @@
+<app-navbar-second></app-navbar-second>
+<app-sidebar></app-sidebar>
+
+<section class="home-section">
+    <h1 class="page-title"> your Document</h1>
+    <div class="global-div">
+        <div class="second-div" *ngFor="let consultation of consultations">
+            <div class="info-patient">
+                <img [src]="imageUrl">
+                <span class="name"> Doctor : 
+                    {{ consultation.doctor.nom }} {{ consultation.doctor.prenom }}</span>
+            </div>
+
+            <div class="see-more">
+                <button type="button" class="btn btn-primary" style="background-color: #17084d;">install consultation</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,80 @@
+<div class="section">
+    <div class="horizontal-line">
+        <i class='bx bx-file'></i>
+        <div class="section2">
+            <span class="span-Rendu">Compte Rendu </span>
+            <i class='bx bxs-edit' ></i>
+        </div>
+        <i class='bx bxs-chevron-down bx-rotate-180'  style="float:right"></i>
+        
+    </div>
+    <hr>
+    <textarea></textarea>
+    <div class="button-div">
+        <button class="button button2">Enregistrer</button>
+    </div>
+ 
+</div>
+
+<div class="section">
+    <div class="horizontal-line">
+      <i class='bx bx-file'></i>
+      <div class="section2">
+        <span class="span-Rendu">Traitement</span>
+        <i class='bx bxs-edit'></i>
+      </div>
+      <i class='bx bxs-chevron-down bx-rotate-180' style="float:right"></i>
+    </div>
+    <hr>
+    <div class="span-Traitement">
+      <span><i>select file or image here</i></span>
+
+      <ul class="file-list">
+        <li *ngFor="let file of uploadedFiles">
+          {{ file.name }}
+          <button (click)="removeFile(file)">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <div class="button-div">
+      <label for="fileInput" class="button button2" style="background-color: #17084d; color: white;">Upload</label>
+      <input id="fileInput" type="file" (change)="onFileSelected($event)" multiple style="display: none;">
+    </div>
+  </div>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="section">
+    <div class="horizontal-line">
+        <i class='bx bx-file'></i>
+        <div class="section2">
+            <span class="span-Rendu">Traitement </span>
+            <i class='bx bxs-edit' ></i>
+        </div>
+        <i class='bx bxs-chevron-down bx-rotate-180'  style="float:right"></i>
+    </div>
+    <hr>
+    <div class="span-Traitement">
+        <span ><i>select file or image here</i> </span>
+
+    </div>
+    <div class="button-div">
+        <button class="button button2" style="background-color: blue; color: white;">Upload</button>
+    </div>
+ 
+</div>  -->

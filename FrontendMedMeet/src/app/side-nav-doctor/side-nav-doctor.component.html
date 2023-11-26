@@ -1,0 +1,55 @@
+<div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+    <div class="logo-details">
+        <div class="logo_name">MedMeet</div>
+        <i class='bx bx-menu' id="btn" (click)="toggleSidebar()"></i>
+    </div>
+    <ul class="nav-list">
+
+        <li>
+            <a href="/dashborddoctor">
+                <i class='bx bxs-home-alt-2'></i>
+                <span class="links_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+        <li>
+            <a href="/listPatient">
+                <i class='bx bx-list-ul'></i>
+                <span class="links_name">All Patient</span>
+            </a>
+            <span class="tooltip">All Patient</span>
+        </li>
+        <li>
+            <a href="/dashborddoctor">
+                <i class='bx bxs-calendar'></i>
+                <span class="links_name">My Dashbord</span>
+            </a>
+            <span class="tooltip">My Dashbord</span>
+        </li>
+        <li>
+            <a href="/setting">
+                <i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+        </li>
+
+        <li>
+            <a href="/notification">
+                <i class='bx bxs-bell-ring'></i>
+                <span class="links_name">Notification</span>
+            </a>
+            <span class="tooltip">Notification</span>
+        </li>
+
+
+
+        <li class="profile">
+            <a (click)="logout()">
+                <i class='bx bx-log-out' id="log_out"></i>
+                <span class="links_name">Log out</span>
+            </a>
+            <span class="tooltip">Log out</span>
+        </li>
+    </ul>
+</div>

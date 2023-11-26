@@ -1,0 +1,68 @@
+@import '~boxicons/css/boxicons.min.css';
+
+/* Styles communs à toutes les tailles d'écran */
+
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    padding-left: 78px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.page-title {
+    color: #17084d;
+    font-family: Kirang Haerang;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.global-div {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(107, 106, 106, 0.24), 0 17px 50px 0 rgba(98, 98, 98, 0.19);
+    margin-left: 30px;
+    padding: 20px;
+}
+
+.second-div {
+    width: 92%;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(28, 28, 28, 0.24), 0 17px 50px 0 rgba(98, 98, 98, 0.19);
+    border: 1px solid rgb(169, 169, 177);
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    background-color: #FBF2E3;
+}
+
+.info-patient {
+    margin-left: 15px;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.see {
+    color: #17084d;
+    font-weight: bold;
+}
+
+i {
+    font-size: 25px;
+    color: #17084d;
+    margin-left: 6px;
+}
+
+.name {
+    margin-left: 15px;
+}
+
+img {
+    margin: 7px;
+}

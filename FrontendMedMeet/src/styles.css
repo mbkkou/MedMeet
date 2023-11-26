@@ -1,0 +1,16 @@
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/material.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "KirangHaerang-Regular";
+    src: url("./assets/font/kirang-haerang/KirangHaerang-Regular.ttf");
+}
+
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    padding-left: 78px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}

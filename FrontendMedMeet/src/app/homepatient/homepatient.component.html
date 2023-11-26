@@ -1,0 +1,75 @@
+<app-navbar-second>
+</app-navbar-second>
+<app-sidebar></app-sidebar>
+
+<section class="home-section">
+    <div class="container" style="background-color: #FBF2E3;">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <p style=" font-family: KirangHaerang-Regular;font-size: 40px; margin:15px; color: #17084d">ARE you looking for <br> a doctor ?</p>
+                </div>
+                <div class="row">
+                    <div class="col-2 offset-2" style="color: black;"><input type="text" class="input" placeholder="Name, speciality,.." style="color: black;" /></div>
+                    <div class=" offset-3 col-2"><input type="text" class="input" placeholder="Place" /></div>
+                </div>
+                <div class="row">
+                    <div class="offset-8 col-3"> <button class="button" style="color:aliceblue">search </button></div>
+                </div>
+            </div>
+            <div class="offset-2 col-4">
+                <img [src]="image1Url" width="200px" />
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-color: #FBF2E3; margin-top: 10px;">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <p style="font-family: KirangHaerang-Regular; font-size: 40px; margin:15px; color: #17084d;">do you want to see all <br> your consultations ?</p>
+                </div>
+
+                <div class="row">
+                    <div class="offset-8 col-3"> <button class="button" style="color:aliceblue">search </button></div>
+                </div>
+            </div>
+            <div class="offset-2 col-4">
+                <img [src]="image2Url" width="200px" />
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class='d-flex justify-content-center' style="font-family: KirangHaerang-Regular; font-size: 50px; ">
+            <p class="d-flex w-10" style="text-align: center; color: #17084d;"> MedMeet<br/> is here for you
+            </p>
+        </div>
+
+    </div>
+    <div class="row" style="margin-top: 50px;margin-bottom: 50px;">
+        <div class="col-3 align-items-center" align="center" style='margin-left: 50px ;'>
+            <div style="border-radius: 100; align-content: center;">
+                <img [src]="urlimage4" width="100" />
+            </div>
+            <br/>
+            <p style="align-items: center;  text-align: center;"> Manage your appointments and health documents .</p>
+        </div>
+        <div class="offset-1 col-3 align-items-center" align="center">
+            <div style="border-radius: 100; align-content: center;">
+                <img [src]="urlimage5" width="100" />
+            </div>
+            <br/>
+            <p style="align-items: center;  text-align: center;"> A community of practitioners to help you</p>
+        </div>
+        <div class="offset-1 col-3 align-items-center" align="center">
+            <div style="border-radius: 100; align-content: center;">
+                <img [src]="urlimage6" width="100" />
+            </div>
+            <br/>
+            <p style="align-items: center;  text-align: center;"> whenever wherever , you can make an appointment</p>
+        </div>
+    </div>
+    <div>
+        <app-footer></app-footer>
+    </div>
+</section>

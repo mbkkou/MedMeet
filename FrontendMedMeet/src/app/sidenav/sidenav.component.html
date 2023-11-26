@@ -1,0 +1,73 @@
+<div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+    <div class="logo-details">
+        <div class="logo_name">MedMeet</div>
+        <i class='bx bx-menu' id="btn" (click)="toggleSidebar()"></i>
+    </div>
+    <ul class="nav-list">
+
+        <li>
+            <a routerLink="/homepatient">
+                <i class='bx bxs-home-alt-2'></i>
+                <span class="links_name">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+        </li>
+        <li>
+            <a routerLink="/user">
+                <i class='bx bxs-user-detail'></i>
+                <span class="links_name">doctors</span>
+            </a>
+            <span class="tooltip">doctors</span>
+        </li>
+        <li>
+            <a routerLink="/dashboard">
+                <i class='bx bxs-calendar'></i>
+                <span class="links_name">Calendar</span>
+            </a>
+            <span class="tooltip">Calendar</span>
+        </li>
+        <li>
+            <a routerLink="/documents">
+                <i class='bx bxs-folder'></i>
+                <span class="links_name">your document</span>
+            </a>
+            <span class="tooltip">your document</span>
+        </li>
+        <li>
+            <a routerLink="/notification">
+                <i class='bx bxs-bell-ring'></i>
+                <span class="links_name">Notification</span>
+            </a>
+            <span class="tooltip">Notification</span>
+        </li>
+        <li>
+            <a routerLink="/history">
+                <i class='bx bx-history'></i>
+                <span class="links_name">History</span>
+            </a>
+            <span class="tooltip">History</span>
+        </li>
+        <li>
+            <a routerLink="/listFavoris">
+                <i class='bx bxs-heart'></i>
+                <span class="links_name">listFavoris</span>
+            </a>
+            <span class="tooltip">Saved</span>
+        </li>
+        <li>
+            <a routerLink="/settings">
+                <i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+            <a (click)="logout()">
+                <i class='bx bx-log-out' id="log_out"></i>
+                <span class="links_name">Log out</span>
+            </a>
+            <span class="tooltip">Log out</span>
+        </li>
+    </ul>
+
+</div>

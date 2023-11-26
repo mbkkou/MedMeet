@@ -1,0 +1,20 @@
+<app-navbar-second></app-navbar-second>
+<app-side-nav-doctor></app-side-nav-doctor>
+
+<section class="home-section">
+  <h1 class="page-title">List Of Patients</h1>
+  <div class="global-div">
+    <div class="second-div" *ngFor="let rendezvous of patients" (click)="viewMedicalFolder(rendezvous.patient)">
+        <div class="info-patient">
+            <img [src]="imageUrl">
+            <span class="name">{{ rendezvous.patient.prenom_Patient }} {{ rendezvous.patient.nom_Patient }}</span>   
+          </div>
+          
+      <div class="see-more">
+        <button type="button" class="btn btn-primary" style="background-color: #17084d;">View Medical Record</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

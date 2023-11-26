@@ -1,0 +1,24 @@
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    padding-left: 78px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.input {
+    border-radius: 20px;
+    background: #DFDCBE;
+    align-items: center;
+    padding: 05px;
+    color: rgb(5, 1, 24);
+}
+
+.button {
+    margin: 10px;
+    background: #17084d;
+    border-radius: 10px;
+    justify-content: center;
+    width: 100px;
+    height: 50;
+}

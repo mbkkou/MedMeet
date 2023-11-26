@@ -1,0 +1,262 @@
+@import '~boxicons/css/boxicons.min.css';
+
+/* Styles communs à toutes les tailles d'écran */
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    padding-left: 78px;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.page-title {
+    color: #17084d;
+    font-family: Kirang Haerang;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.element {
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 98%;
+    height: 150px;
+    background-color: #EEF3F0;
+    display: flex;
+    align-items: center;
+}
+
+.element, .a {
+    text-decoration: none;
+    width: 100%;
+    margin-right: 14px;
+}
+
+.element i,
+.element .element-title {
+    color: #000;
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+.bxs-folder .element-title {
+    float: left;
+}
+
+.element-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.profile-patient {
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 98%;
+    height: 200px;
+    background-color: #EEF3F0;
+    display: flex;
+    align-items: center;
+}
+
+.profile-patient img {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: bold;
+    color: #17084d;
+}
+
+.profile-patient p {
+    margin: 0;
+}
+
+.profile-patient p span {
+    font-weight: bold;
+    width: 200px;
+}
+
+.profile-patient .profile-patient-left {
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+.profile-patient .profile-patient-right {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+/* Styles pour les tablettes */
+@media (max-width: 991px) {
+    .home-section {
+        left: 0;
+        width: 100%;
+    }
+
+    .page-title {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+
+/* Styles pour les téléphones mobiles */
+@media (max-width: 767px) {
+    .page-title {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .element {
+        height: 100px;
+    }
+
+    .element i,
+    .element .element-title {
+        font-size: 30px;
+        padding-left: 30px;
+    }
+
+    .profile-patient {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .profile-patient img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .profile-patient p {
+        margin-bottom: 5px;
+    }
+
+    .element-title {
+        font-size: 25px;
+    }
+}
+
+
+@import '~boxicons/css/boxicons.min.css';
+
+.section {
+    border: 1px solid;
+    margin: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.horizontal-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.section2 {
+    border-radius: 10px;
+    background-color: #FBF2E3;
+    width: 35%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.bxs-chevron-down {
+    margin-right: 30px;
+}
+
+i {
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.span-Rendu {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.span-Traitement{
+    font-size: 20px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: 50px;
+   
+}
+
+textarea {
+    display: block;
+    width: calc(100% - 60px);
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    margin: 20px 30px;
+    font-weight: bold;
+
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    background-color: #EEF3F0;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+   text-align: center;
+   
+}
+.button-div{
+    display: flex;
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+    margin-top: 20px; /* Added */
+}
+.file-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .file-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .file-list li button {
+    margin-left: 10px;
+  }
+  
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .section2 {
+        width: 100%;
+    }
+}

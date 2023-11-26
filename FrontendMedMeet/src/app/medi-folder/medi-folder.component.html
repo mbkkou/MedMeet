@@ -1,0 +1,83 @@
+<app-navbar-second></app-navbar-second>
+<app-side-nav-doctor></app-side-nav-doctor>
+
+<section class="home-section">
+    <h1 class="page-title">Medical File</h1>
+    <div class="profile-patient">
+        <div class="profile-patient-left">
+            <img [src]="profileUrl" width="100" height="100" />
+        </div>
+        <div class="profile-patient-right">
+            <p><span class="title">Nom du patient : </span><span>{{patient.prenom_Patient}} {{patient.nom_Patient}}</span></p>
+
+            <p><span class="title">Sexe :</span> <span> {{patient.gender_Patient}}</span></p>
+
+        </div>
+        <div>
+            <img [src]="medifoldeUrl" width="329.5" height="189.5" style="margin-bottom: 60px;" />
+        </div>
+    </div>
+
+
+
+    <!-- Élément "Traitement" -->
+    <div class="element" *ngIf="showTraitement">
+        <div class="a">
+            <i class="bx bxs-file-blank"></i>
+            <span class="element-title">Traitement</span>
+            <i class="bx bxs-down-arrow" style="float:right" (click)="toggleTraitement()"></i>
+        </div>
+    </div>
+    <!-- Partie cachée du Traitement -->
+    <div class="section" *ngIf="showTraitementDetails">
+        <div class="horizontal-line">
+            <i class='bx bx-file'></i>
+            <div class="section2">
+                <span class="span-Rendu">Traitement</span>
+                <i class='bx bxs-edit'></i>
+            </div>
+            <i class='bx bxs-chevron-down bx-rotate-180' style="float:right" (click)="toggleTraitementDetails()"></i>
+        </div>
+        <hr>
+        <div class="span-Traitement">
+            <span><i>select file or image here</i></span>
+            <ul class="file-list">
+                <li *ngFor="let file of uploadedFiles">
+                    {{ file.name }}
+                    <button (click)="removeFile(file)">Delete</button>
+                </li>
+            </ul>
+        </div>
+        <div class="button-div">
+            <label for="fileInput" class="button button2" style="background-color: #17084d; color: white;">Upload</label>
+            <input id="fileInput" type="file" (change)="onFileSelected($event)" multiple style="display: none;">
+        </div>
+    </div>
+    <!-- Partie pour afficher le Compte Rendu -->
+    <div class="element" *ngIf="showCompteRendu">
+        <div class="a">
+            <i class="bx bxs-folder"></i>
+            <span class="element-title">Compte Rendu</span>
+            <i class="bx bxs-down-arrow" style="float:right" (click)="toggleCompteRendu()"></i>
+        </div>
+    </div>
+    <!-- Partie cachée du Compte Rendu -->
+    <div class="section" *ngIf="showCompteRenduDetails">
+        <div class="horizontal-line">
+            <i class='bx bx-file'></i>
+            <div class="section2">
+                <span class="span-Rendu">Compte Rendu</span>
+                <i class='bx bxs-edit'></i>
+            </div>
+            <i class='bx bxs-chevron-down bx-rotate-180' style="float:right" (click)="toggleCompteRenduDetails()"></i>
+        </div>
+        <hr>
+        <textarea [(ngModel)]="compteRenduText"></textarea>
+        <div class="button-div">
+            <button class="button button2" (click)="saveConsultation()">Enregistrer</button>
+        </div>
+    </div>
+
+</section>
+
+<app-footer></app-footer>

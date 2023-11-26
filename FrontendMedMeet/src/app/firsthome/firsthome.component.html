@@ -1,0 +1,103 @@
+<app-navbar></app-navbar>
+<div class="Container">
+    <div class="row" style="background-color: rgba(251, 242, 227, 1);">
+        <div class="offset-1 col-6">
+            <p style="font-family: ; font-size: 70px;color: #17084d;"> Welcome to MedMeet, are you ?</p>
+            <div>
+                <button class="button-patient" routerLink="loginpatient" style="color: aliceblue;">patient </button>
+                <button class="button-patient" routerLink="logindocteur" style="color: aliceblue;"> doctor</button>
+            </div>
+        </div>
+        <div class="col-5">
+            <img [src]="urlimage1" width="425px" />
+        </div>
+    </div>
+    <div class="row" style="margin-top: -20px; margin-left: 50px ;">
+        <div class="col-sm-3">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">we have many type of doctors if you want any other information </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img [src]="urlimage2" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <a>Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class=" offset-1 col-sm-3">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">do you want to know the symptoms of covids-19 </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img [src]="urlimage3" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <a>Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="offset-1 col-sm-3">
+            <div class="card mb-3" style="max-width: 540px; ">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">we have many type of doctors if you want any other information </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img [src]="urlimage2" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <a>Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='d-flex justify-content-center' style="font-family: KirangHaerang-Regular; font-size: 50px; ">
+            <p class="d-flex w-10" style="text-align: center; color: #17084d;"> MedMeet<br/> is here for you
+            </p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-3 align-items-center" align="center" style='margin-left: 50px ;'>
+            <div style="border-radius: 100; align-content: center;">
+                <img [src]="urlimage4" width="100" />
+            </div>
+            <br/>
+            <p style="align-items: center;  text-align: center;"> Manage your appointments and health documents .</p>
+        </div>
+        <div class="offset-1 col-3 align-items-center" align="center">
+            <div style="border-radius: 100; align-content: center;">
+                <img [src]="urlimage5" width="100" />
+            </div>
+            <br/>
+            <p style="align-items: center;  text-align: center;"> A community of practitioners to help you</p>
+        </div>
+        <div class="offset-1 col-3 align-items-center" align="center">
+            <div style="border-radius: 100; align-content: center;">
+                <img [src]="urlimage6" width="100" />
+            </div>
+            <br/>
+            <p style="align-items: center;  text-align: center;"> whenever wherever , you can make an appointment</p>
+        </div>
+    </div>
+    <div>
+        <app-footer></app-footer>
+    </div>
+
+</div>

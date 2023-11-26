@@ -1,0 +1,15 @@
+<app-navbar-second></app-navbar-second>
+<app-sidebar></app-sidebar>
+
+<section class="home-section" style="justify-content: center;">
+
+    <ejs-schedule [eventSettings]='eventSettings' [selectedDate]='selectedDate' [currentView]="setView" (actionBegin)="onActionBegin($event)">
+
+        <e-views>
+            <e-view option="Month"></e-view>
+            <e-view option="Day"></e-view>
+            <e-view option="Day"></e-view>
+        </e-views>
+    </ejs-schedule>
+    <footer style="margin-top: 50px;"></footer>
+</section>
